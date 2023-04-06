@@ -19,7 +19,7 @@ public class Ejercicio4 {
 
 public static void main(String[] args) {
         // TODO code application logic here
-        String aux = "";
+        String aux;
         int [] [] matriz = new int [4] [4];
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
