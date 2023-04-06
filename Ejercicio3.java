@@ -24,15 +24,18 @@ public class Ejercicio3 {
         System.out.println("Ingrese el tamaño del vector");
         int limite = nombre.nextInt();
         vector = new int[limite];
+        // Subprograma que muestre el vector
         for (int i = 0; i < limite; i++) {
             vector[i] = (int) (Math.random() * 100000);
             mostrar+= (vector[i] + " ");
             cuenta=0;
+            int aux1=vector[i];
             do {
-                aux = vector[i] / 10;
-                vector[i]=aux;
+                aux = aux1 / 10;
+                aux1=aux;
                 cuenta++;
             } while (aux > 0);
+            //Subprograma para imprimir la respuesta
             switch (cuenta) {
                 case 1:
                     unaCifra++;
@@ -55,11 +58,11 @@ public class Ejercicio3 {
         }
         System.out.println(mostrar);
         System.out.println("");
-        System.out.println("Hay " + unaCifra + "números de 1 cifra");
-        System.out.println("Hay " + dosCifras + "números de 2 cifras");
-        System.out.println("Hay " + tresCifras + "números de 3 cifras");
-        System.out.println("Hay " + cuatroCifras + "números de 4 cifras");
-        System.out.println("Hay " + cincoCifras + "números de 5 cifras");
+        System.out.println("Hay " + unaCifra + " números de 1 cifra");
+        System.out.println("Hay " + dosCifras + " números de 2 cifras");
+        System.out.println("Hay " + tresCifras + " números de 3 cifras");
+        System.out.println("Hay " + cuatroCifras + " números de 4 cifras");
+        System.out.println("Hay " + cincoCifras + " números de 5 cifras");
 
     }
 }
