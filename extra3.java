@@ -25,7 +25,14 @@ public class extra3 {
         int vector[] = new int[dimV];
 
         rellenaVector(vector);
-        muestraVector(vector);
+        /*
+         *Para mostrar puedo usar el bucle for tradicional "muestraVector"
+         * o el bucle for mejorado "muestraMejorado"
+         *Dejar como comentario el que no se utilice (con "//")
+         */
+        
+        //muestraVector(vector);
+        muestraMejorado(vector);
     }
 
     private static void rellenaVector(int[] vector) {
@@ -42,6 +49,16 @@ public class extra3 {
             System.out.print(vector[i] + " ");
         }
         System.out.println("");
+    }
+
+    private static void muestraMejorado(int[] vector) {
+        String aux = "";
+
+        System.out.print("Los elementos del vector son: ");
+        for (int i : vector) {
+            aux += i + " ";
+        }
+        System.out.println(aux);
     }
 
 }

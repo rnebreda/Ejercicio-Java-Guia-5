@@ -82,7 +82,7 @@ public class extra4 {
         for (int i = 0; i < 4; i++) {
             nota = num.nextDouble();
             sumaNotas += (nota * ponderado[i]);
-            aux2 = (int) (nota * ponderado[i] * 100);
+            aux2 = Math.round(nota * ponderado[i] * 100);
             muestra = muestra + (String.valueOf(nota) + " ");
             muestraPond = muestraPond + (String.valueOf(aux2/100) + " ");
         }
@@ -91,7 +91,7 @@ public class extra4 {
         System.out.print("Las notas ponderadas son: ");
         System.out.println(muestraPond);
         
-        aux1 = (int) (sumaNotas * 100);
+        aux1 = Math.round(sumaNotas * 100);
         retorno = aux1 / 100;
         System.out.println("Promedio = " + retorno);
 
