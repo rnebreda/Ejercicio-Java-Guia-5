@@ -33,7 +33,7 @@ public class extra7 {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
         int dimV;
-        System.out.println("Ingrese la cantidad de elementos del vectores");
+        System.out.println("Ingrese la cantidad de elementos del vector");
         dimV = num.nextInt();
         int vector[] = new int[dimV];
 
@@ -46,7 +46,7 @@ public class extra7 {
             a = b;
             b = c;
             vector[i] = a;
-            System.out.print(a + " ");
+            System.out.print(a + ", ");
         }
         System.out.println("");
     }
