@@ -83,8 +83,8 @@ public class extra4 {
             nota = num.nextDouble();
             sumaNotas += (nota * ponderado[i]);
             aux2 = Math.round(nota * ponderado[i] * 100);
-            muestra = muestra + (String.valueOf(nota) + " ");
-            muestraPond = muestraPond + (String.valueOf(aux2/100) + " ");
+            muestra += (String.valueOf(nota) + " ");
+            muestraPond += (String.valueOf(aux2/100) + " ");
         }
         System.out.print("Las notas ingresadas son: ");
         System.out.println(muestra);

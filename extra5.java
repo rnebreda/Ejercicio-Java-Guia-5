@@ -37,12 +37,14 @@ public class extra5 {
     }
 
     private static void rellenaMatriz(int[][] matriz, int filas, int columnas) {
-
-        for (int i = 0; i < filas; i++) {
+        int suma=0;
+        for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < columnas; j++) {
                 matriz[i][j] = (int) (Math.random() * 10);
+                suma+= matriz [i][j];
             }
         }
+        System.out.println("La suma de los elementos es "+suma);
     }
 
     private static void muestraMatriz(int[][] matriz, int filas, int columnas) {
